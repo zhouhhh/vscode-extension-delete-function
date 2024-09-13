@@ -1,0 +1,72 @@
+Arguments: 
+  /Users/zhouhang/.nvm/versions/node/v18.18.0/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /Users/zhouhang/.nvm/versions/node/v18.18.0/bin:/Users/zhouhang/.nvm/versions/node/v18.15.0/bin:/Users/zhouhang/Library/pnpm:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/zhouhang/.nvm/versions/node/v16.15.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/zhouhang/.sdkman/candidates/java/current/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/zhouhang/.nvm/versions/node/v16.15.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.18.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile '/Users/zhouhang/Library/Caches/Yarn/v6/npm-globals-11.12.0-ab8795338868a0babd8525758018c2a7eb95c42e-integrity/node_modules/globals/globals.json' -> '/Users/zhouhang/Documents/study/vscode-extension-delete-function/node_modules/@babel/traverse/node_modules/globals/globals.json'
+
+npm manifest: 
+  {
+    "name": "vscode-extension-delete-function",
+    "displayName": "vscode-extension-delete-function",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+      "vscode": "^1.91.0"
+    },
+    "categories": [
+      "Other"
+    ],
+    "activationEvents": [],
+    "main": "./out/extension.js",
+    "contributes": {
+      "commands": [
+        {
+          "command": "vscode-extension-delete-function.helloWorld",
+          "title": "Hello World"
+        }
+      ]
+    },
+    "scripts": {
+      "vscode:prepublish": "pnpm run compile",
+      "compile": "tsc -p ./",
+      "watch": "tsc -watch -p ./",
+      "pretest": "pnpm run compile && pnpm run lint",
+      "lint": "eslint src --ext ts",
+      "test": "vitest --run"
+    },
+    "devDependencies": {
+      "@types/babel__traverse": "^7.20.6",
+      "@types/mocha": "^10.0.7",
+      "@types/node": "20.x",
+      "@types/vscode": "^1.91.0",
+      "@typescript-eslint/eslint-plugin": "^7.14.1",
+      "@typescript-eslint/parser": "^7.11.0",
+      "@vscode/test-cli": "^0.0.9",
+      "@vscode/test-electron": "^2.4.0",
+      "eslint": "^8.57.0",
+      "typescript": "^5.4.5",
+      "vitest": "^2.0.3"
+    },
+    "dependencies": {
+      "@babel/parser": "^7.24.8",
+      "@babel/traverse": "^7.24.8"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
